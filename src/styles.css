@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 16px/1.625 "Lato","Arial","Helvetica Neue","Helvetica",sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  z-index: 8000;
+  height: 80px;
+}
+
+.cart-button {
+  float: right;
+  position: relative;
+  top: 20%;
+  right: 10%;
+  border-radius: 2px;
+  padding: 15px;
+  background-color: #ff4949;
+  border: 1px solid #ff4949;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-items {
+  float: left;
+  margin: 0px 50px 20px 0px;
+  height: 100%;
+  padding: 40px;
+  width: 20%;
+  box-shadow: 0 8px 24px -12px rgb(2 23 44 / 48%), 0 0 3px -1px rgb(2 23 44 / 20%);
+}
+
+.menu-item-selection-form {
+  margin: 15%;
+}
+
+.menu-item-price {
+  margin: 20px 0px;
+}
+
+.add-to-cart-button {
+  background-color: #ff4949;
+  border: 1px solid #ff4949;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 10px 20px;
+}
