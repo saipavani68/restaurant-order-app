@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import menuItems from "./data.json";
 
 function MenuItemSelectionForm() {
-  const [itemsAddedToCart, setItemToCart] =  useState([]);
+  const [itemsAddedToCart, setItemToCart] =  useState(JSON.parse(localStorage.getItem('items')) || []);
   function handleClick(e) {
     const itemIndex = e.target.id;
     itemsAddedToCart.push(menuItems.menu[itemIndex]);
     setItemToCart(itemsAddedToCart);
+    localStorage.setItem('items', JSON.stringify(itemsAddedToCart));
   }
   return (
     <div className="menu-item-selection-form">
